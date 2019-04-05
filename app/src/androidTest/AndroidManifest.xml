@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cliqz.browser.debug.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <instrumentation
+        android:name="com.cliqz.browser.debug.test"
+        android:targetPackage="com.cliqz.browser.debug" />
+
+    <application
+        android:label="Instrumentation Test">
+
+        <uses-library android:name="android.test.runner" />
+
+    </application>
+
+</manifest>
